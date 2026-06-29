@@ -33,7 +33,7 @@ selected_countries = st.sidebar.multiselect("Country", countries, default=countr
 channels = sorted(df["marketing_channel"].unique())
 selected_channels = st.sidebar.multiselect("Channel", channels, default=channels)
 
-breakdown = st.sidebar.radio("Break down by", ["None", "Channel", "Country", "Country + Channel"])
+breakdown = st.sidebar.radio("Break down by", ["None", "Channel", "Country"])
 
 # ── filter ──
 mask = (
